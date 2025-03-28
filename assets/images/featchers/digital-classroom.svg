@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#2B215F;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<polygon class="st0" points="162.2,85.2 106.6,53.1 106.6,117.3 162.2,85.2 106.6,53.1 106.6,117.3 	"/>
+	<g>
+		<path class="st0" d="M106.6,165.4c0,14.8,9.1,26.7,21.4,26.7c12.3,0,21.4-12,21.4-26.7c0-14.8-9.1-26.7-21.4-26.7
+			C115.7,138.7,106.6,150.7,106.6,165.4z"/>
+		<path class="st0" d="M144,208.2h5.3c17.7,0,32.1,14.4,32.1,32.1V251"/>
+		<path class="st0" d="M112,208.2h-5.3c-17.7,0-32.1,14.4-32.1,32.1V251"/>
+		<path class="st0" d="M37.1,176.1c0,14.8,9.1,26.7,21.4,26.7c12.3,0,21.4-12,21.4-26.7c0-14.8-9.1-26.7-21.4-26.7
+			C46.2,149.4,37.1,161.4,37.1,176.1z"/>
+		<path class="st0" d="M42.4,218.9h-5.3C19.4,218.9,5,233.2,5,251"/>
+		<ellipse class="st0" cx="197.5" cy="176.1" rx="21.4" ry="26.7"/>
+		<path class="st0" d="M213.6,218.9h5.3c17.7,0,32.1,14.3,32.1,32.1"/>
+	</g>
+	<path class="st0" d="M15.7,165.4c-5.9,0-10.7-4.8-10.7-10.7v-139C5,9.8,9.8,5,15.7,5h224.6c5.9,0,10.7,4.8,10.7,10.7v139
+		c0,5.9-4.8,10.7-10.7,10.7"/>
+</g>
+</svg>
