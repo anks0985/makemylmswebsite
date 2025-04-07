@@ -165,15 +165,15 @@
             <span class="floating-label">Phone</span>
             <span class="error" id="phone-error"></span>
           </div>
-          <button class="g-recaptcha" data-sitekey="6LcrwAwrAAAAAIeLzAdVMYZSDaxxHEFQIkCWnA-K" data-callback='onSubmit' data-action='submit'>Submit2</button>
+          <p id="mail-status" class="mt-0"></p>
+          <button id="demo-button" name="submit" style="display: none;">Let's Connect!</button>
+          <button class="g-recaptcha" data-sitekey="6LcrwAwrAAAAAIeLzAdVMYZSDaxxHEFQIkCWnA-K" data-callback='onSubmit' data-action='submit' style="text-transform: none;">Let's Connect!</button>
           <script src="https://www.google.com/recaptcha/api.js"></script>
           <script>
             function onSubmit(token) {
-              document.getElementById("demo-form").submit();
+              document.getElementById("demo-button").click();
             }
           </script>
-          <p id="mail-status" class="mt-0"></p>
-          <button name="submit" style="text-transform: none;">Let's Connect!</button>
 	
         </div>
       <img src="assets/images/join-person.png" class="joinper" alt="">
