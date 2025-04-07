@@ -5,9 +5,7 @@ $password = "Chr^8JisLSe";
 $db = "mmlms_com_db";
 // Create connection
 $conn = new mysqli($servername,$username, $password,$db);
-
 if((isset($_POST['name']))&&(isset($_POST['email']))&&(isset($_POST['phone']))&&(isset($_POST['emvalue']))&&(isset($_POST['message']))){
-
 $name=$_POST['name'];
 $email=$_POST['email'];
 $phone=$_POST['phone'];
@@ -21,7 +19,6 @@ $query = "INSERT INTO education_solutions_tbl (business_name,email,phone,estimat
 $res = mysqli_query($conn,$query);
 include('mail/library.php'); 
 include('mail/classes/class.phpmailer.php'); 
-
 $mail = new PHPMailer();
 $mail->IsSMTP(); // enable SMTP
 $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
@@ -49,12 +46,10 @@ $mail->Body = '
        </html>';
 $mail->AddAddress('mail2dipesh@gmail.com'); // mail2dipesh@gmail.com
 $mail->AddAddress('anks0985@gmail.com');
-
     $mail->Send();
     echo "Thank you! for showing your interest in Make My LMS, we will get in touch with you shortly";
  } else {
     
     echo "Mailer Error: " . $mail->ErrorInfo;
  }
-
 ?>
