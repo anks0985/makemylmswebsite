@@ -165,6 +165,13 @@
             <span class="floating-label">Phone</span>
             <span class="error" id="phone-error"></span>
           </div>
+          <button class="g-recaptcha" data-sitekey="6LcrwAwrAAAAAIeLzAdVMYZSDaxxHEFQIkCWnA-K" data-callback='onSubmit' data-action='submit'>Submit</button>
+          <script src="https://www.google.com/recaptcha/api.js"></script>
+          <script>
+            function onSubmit(token) {
+              document.getElementById("demo-form").submit();
+            }
+          </script>
           <p id="mail-status" class="mt-0"></p>
           <button name="submit" style="text-transform: none;">Let's Connect!</button>
 	
