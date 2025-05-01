@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Number Display</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Courier New', monospace;
+    }
+
+    .counter {
+      font-size: 10rem;
+      color: #00FF00;
+      letter-spacing: 0.3rem;
+      background: #111;
+      padding: 2rem 4rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 40px #00FF00;
+    }
+  </style>
+</head>
+<body>
+  <div class="counter" id="counter">00000</div>
+
+  <script>
+    async function fetchNumber() {
+      try {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbxNgzlyDnt5e5ZyG50XWCCRoEjleaKS8eUUtqDjJwaBOSm3AYdJ5BCRV7fY2-wJT13LUg/exec');
+        const number = await response.text();
+        document.getElementById('counter').innerText = number.padStart(5, '0');
+      } catch (error) {
+        console.error("Error fetching number:", error);
+      }
+    }
+
+    fetchNumber();
+    setInterval(fetchNumber, 30000); // Optional: auto-refresh every 30s
+  </script>
+</body>
+</html>
